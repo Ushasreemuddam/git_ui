@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <title>Office_wOrk</title>
+        <style>
+            body {
+                margin: auto;
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                /* Remove overflow property to allow scrolling */
+                /* overflow: auto; */
+                background: linear-gradient(
+                    315deg,
+                    rgb(131 211 224) 3%,
+                    rgb(245 189 219) 38%,
+                    rgba(48, 238, 226, 1) 68%,
+                    #dc3545 98%
+                );
+                animation: gradient 15s ease infinite;
+                background-size: 400% 400%;
+                background-attachment: fixed;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 0%;
+                }
+                50% {
+                    background-position: 100% 100%;
+                }
+                100% {
+                    background-position: 0% 0%;
+                }
+            }
+
+            .wave {
+                background: rgb(255 255 255 / 25%);
+                border-radius: 1000% 1000% 0 0;
+                position: fixed;
+                width: 200%;
+                height: 12em;
+                animation: wave 10s -3s linear infinite;
+                transform: translate3d(0, 0, 0);
+                opacity: 0.8;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            .wave:nth-of-type(2) {
+                bottom: -1.25em;
+                animation: wave 18s linear reverse infinite;
+                opacity: 0.8;
+            }
+
+            .wave:nth-of-type(3) {
+                bottom: -2.5em;
+                animation: wave 20s -1s reverse infinite;
+                opacity: 0.9;
+            }
+
+            @keyframes wave {
+                2% {
+                    transform: translateX(1);
+                }
+
+                25% {
+                    transform: translateX(-25%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                75% {
+                    transform: translateX(-25%);
+                }
+
+                100% {
+                    transform: translateX(1);
+                }
+            }
+
+            .ParentContainer {
+                border: 2px solid;
+                width: 100%;
+                height: auto;
+                border: none;
+                /* background-color: rgba(0, 0, 0,0.5); */
+            }
+
+             img {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                margin: 20px;
+                /* text-align: center; */
+                /* transform: translate(316%); */
+            }
+
+            h1 {
+                text-align: center;
+                position: relative;
+                top: -23px;
+            }
+
+            .btn button {
+                border: none;
+                width: 150px;
+                height: 38px;
+                background-color: #ccc;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                opacity: 0.5;
+                /* float: right; */
+                /* grid:10px; */
+                padding: 10px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .btn button:hover {
+                border: 2px solid grey;
+                color: purple;
+                border-radius: 10px;
+                
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            p {
+                text-align: center;
+                font-size: 19px;
+                font-weight: bold;
+            }
+
+            #web {
+                text-align: center;
+                font-size: 22px;
+                margin-top: -35px;
+                opacity: 0.5;
+            }
+
+            #web1 {
+                text-align: center;
+                font-size: 22px;
+                margin-top: -18px;
+                font-weight: 300;
+                opacity: 0.5;
+            }
+
+            .footer {
+                width: 100%;
+                height: auto;
+                background-color: #000;
+                color: white;
+                position: relative;
+                top: 113px;
+                display: grid;
+                grid-template-columns: 10fr 2fr;
+                opacity: 0.5;
+            }
+
+            #foot {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: justify;
+                margin-top: 10px;
+            }
+
+            .social-icon {
+                color: white;
+                display: block;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+           
+
+            
+        </style>
+    </head>
+    <body>
+    <div class="ParentContainer">
+        <div style="text-align: center;">
+            <img src="/Kidsfashion.jpg" alt="">
+        </div>
+        <h1>
+            KOUSHIK NIMMALA
+        </h1>
+        <p id="web">
+            I am Web Fullstack Developer
+        </p>
+        <p id="web1">
+            I am Koushik Nimmala an aspiring Web UI Full Stack Learning fresher who is trying to seek a role to enhance and
+            explore my technical knowledge in your company.
+        </p>
+        <div class="btn" style="align-items: center; display: flex; justify-content: center;">
+            <a href="/Resume.html"><button>Resume</button></a>
+            <a href="/Public/Project.pdf"><button>Project's</button></a>
+        </div>
+
+        <div class="footer">
+            <div id="foot">
+                "I certify that the content included in this portfolio is solely my own original work. Work included, which was conducted as part of a team or other group, is not applicable in this portfolio."
+            </div>
+
+            <div id="icons" style="text-align: center;">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/jay.koushik9?igsh=MTFnd2gyZ2psNm9zdw%3D%3D&utm_source=qr" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/koushik-nimmala-jay/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            
+
+        </div>
+ 
+    </div>
+
+    </body>
+    </html>
